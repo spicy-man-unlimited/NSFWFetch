@@ -1,0 +1,53 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info
+*.egg
+dist
+build
+.pytest_cache
+.tox
+
+# IDEs
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Virtual Environments
+venv
+env
+.venv
+
+# Testing
+testing
+.coverage
+htmlcov
+
+# Documentation
+docs
+*.md
+README
+
+# CI/CD
+.github
+.gitlab-ci.yml
+.travis.yml
+
+# OS specific
+Thumbs.db
+.DS_Store
+*.log
+
+# Downloads (don't include in image)
+downloads

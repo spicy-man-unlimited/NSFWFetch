@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  nsfwfetch:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nsfwfetch:latest
+    container_name: nsfwfetch-cli
+    volumes:
+      - ./downloads:/data
+    working_dir: /app
+    stdin_open: true
+    tty: true
+    environment:
+      - PYTHONUNBUFFERED=1
+    # Restart policy
+    restart: "no"
